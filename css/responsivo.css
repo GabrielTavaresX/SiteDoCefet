@@ -1,0 +1,31 @@
+@media(max-width:1261px) {
+    main {
+        width: 90%;
+        padding-bottom: 12px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+@media(max-width:600px) {
+    main {
+        width: 99%;
+    }
+
+    body {
+        font-size: 1rem;
+    }
+}
+
+@media(max-width:400px) {
+    body {
+        font-size: 0.7rem;
+    }
+
+    textarea {
+        display: block;
+        margin: 0 auto;
+    }
+}

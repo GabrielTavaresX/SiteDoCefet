@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>contato</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/responsivo.css">
+    <link rel="shortcut icon" href="img/abstract-technology-banner-background.webp">
+
+</head>
+
+<body>
+    <header>
+        <div id="titulo">
+            <h1>CEFET-MG - Campus Varginha - Curso Técnico</h1>
+        </div>
+        <input type="checkbox" name="" id="checkmenu">
+        <label for="checkmenu" id="labelmenu">
+            <div class="menuburguer">
+                <span class="hamburguer" id="hamburguer1"></span>
+                <span class="hamburguer" id="hamburguer2"></span>
+                <span class="hamburguer" id="hamburguer3"></span>
+            </div>
+        </label>
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="curso.html">Curso</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="center-main">
+            <form action="" method="post" enctype="multipart/form-data">
+                <fieldset>
+                    <legend>Contato</legend>
+
+                    
+                    <label for="name">nome:</label>
+                    <input type="text" name="name" id="name" placeholder="Gabriel"><br>
+                    <label for="email">email:</label>
+                    <input type="email" name="email" id="email" placeholder="name@email" required> <br>
+
+           
+                    <input type="radio" name="sex" id="sexoM" value="M" required>
+                    <label for="sexoM">Masculino</label>
+                    <input type="radio" name="sex" id="sexoF" value="F">
+                    <label for="sexoF">Feminino</label>
+                    <br>
+
+                  
+                    <label for="estado">Estado</label>/<label for="cidade">Cidade</label>
+                    <select name="estado" id="estado">
+                        <option value=""> </option>
+                        <option value="AC">AC</option>
+                        <option value="AL">AL</option>
+                        <option value="AP">AP</option>
+                        <option value="AM">AM</option>
+                        <option value="BA">BA</option>
+                        <option value="CE">CE</option>
+                        <option value="DF">DF</option>
+                        <option value="ES">ES</option>
+                        <option value="GO">GO</option>
+                        <option value="MA">MA</option>
+                        <option value="MT">MT</option>
+                        <option value="MS">MS</option>
+                        <option value="MG">MG</option>
+                        <option value="PA">PA</option>
+                        <option value="PB">PB</option>
+                        <option value="PR">PR</option>
+                        <option value="PE">PE</option>
+                        <option value="PI">PI</option>
+                        <option value="RJ">RJ</option>
+                        <option value="RN">RN</option>
+                        <option value="RS">RS</option>
+                        <option value="RO">RO</option>
+                        <option value="RR">RR</option>
+                        <option value="SC">SC</option>
+                        <option value="SP">SP</option>
+                        <option value="SE">SE</option>
+                        
+                    </select>
+                    <input type="text" name="cidade" id="cidade" placeholder="Varginha"> <br>
+
+                   
+                    <label for="arq">Selecione um arquivo</label>
+                    <input type="file" name="file" id="arq">
+                    <br>
+                    <label for="sug">Sugestão</label> <br>
+                    <textarea name="sug" id="sug" cols="30" rows="10" required></textarea>
+
+                    <br>
+                    <button type="submit"> <span>Enviar</span> </button>
+                    <button type="reset"><span>Limpar</span></button>
+                </fieldset>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>
+            copyleft <br>
+
+        </p>
+        <img src="img/Copyright-Symbol-PNG-File.png" alt="copy" width="20px" />
+    </footer>
+</body>
+
+</html>

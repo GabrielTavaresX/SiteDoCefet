@@ -1,0 +1,185 @@
+#menu {
+    width: 100%;
+    background-color: var(--primary);
+    height: 30%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#menu ul {
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+
+
+}
+
+#menu ul li {
+    display: inline-block;
+    font-size: 1.7rem;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transition: background-color 0.2s;
+}
+
+#menu ul li a {
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+}
+
+#menu ul li:hover {
+    background-color: var(--hover);
+}
+
+
+
+
+input#checkmenu {
+    display: none;
+
+}
+
+#labelmenu {
+    width: 5%;
+
+
+    height: 100%;
+    display: none;
+}
+
+.menuburguer {
+    margin-right: 3%;
+    height: 100%;
+}
+
+
+@media(max-width:1542px) {
+    #menu ul li {
+        font-size: 1.2em;
+    }
+}
+
+
+@media(max-width:800px) {
+
+    
+    #menu {
+        display: none;
+        height: 150px;
+        width: 100%;
+        justify-content: right;
+        background-color: transparent;
+
+    }
+
+    #menu ul {
+        flex-wrap: wrap;
+        background-color: #2c75e2d8;
+        height: 100%;
+        width: 100%;
+
+    }
+
+  
+    input#checkmenu~#menu ul {
+        position: absolute;
+        right: -100%;
+        animation: appear;
+        animation-duration: 1.5s;
+        animation-fill-mode: forwards;
+        transition: rigth 3s;
+        transition-timing-function: ease-in;
+
+    }
+
+    #labelmenu {
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        height: auto;
+        width: 100%;
+        padding: 6px 0;
+        background-color: var(--primary);
+
+
+    }
+
+ 
+    @keyframes appear {
+        100% {
+            right: 0;
+        }
+    }
+
+
+    #menu ul li {
+        width: 100%;
+        text-align: center;
+        display: block;
+        height: 25%;
+        border-top: 0.1px solid #fff;
+        display: flex;
+    }
+
+    .menuburguer {
+        display: flex;
+        width: 5%;
+        height: 30px;
+        margin: auto;
+        flex-wrap: wrap;
+    }
+
+   
+    input#checkmenu:checked~#menu {
+        display: flex;
+        backdrop-filter: blur(6px);
+    }
+
+  
+    input#checkmenu:checked~label .menuburguer {
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        rotate: 45deg;
+    }
+
+    input#checkmenu:checked~label #hamburguer1::before {
+        position: absolute;
+        rotate: -90deg;
+    }
+
+
+    .hamburguer,
+    .hamburguer::before {
+        display: block;
+        height: 5%;
+        background-color: #000;
+        width: 100%;
+        transition: rotate 2s;
+
+    }
+
+    .hamburguer::before {
+        display: block;
+        content: '';
+    }
+
+
+
+
+}
+
+@media(max-width:600px) {
+    .menuburguer {
+        width: 7%;
+    }
+}
