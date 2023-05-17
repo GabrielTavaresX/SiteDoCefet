@@ -33,12 +33,12 @@ h2 {
 }
 
 a {
-    color: rgb(255, 255, 255);
+    color:#fff;
     text-decoration: none;
 }
 
 a:visited {
-    color: rgb(255, 255, 255);
+    color:#fff;
 }
 
 a:hover {
@@ -89,8 +89,8 @@ tbody {
 }
 
 table tr th,table tr td {
-    border: 0.1rem solid BLACK;
-    padding: 0.1rem;
+    border: 0.2rem solid BLACK;
+    padding: 0.2rem;
 
 }
 
@@ -129,7 +129,7 @@ form button:hover {
 form button span {
     width: 100%;
     padding: 5%;
-    color: white;
+    color:#fff;
 }
 
 
@@ -154,7 +154,7 @@ footer {
 
 #center-main {
     width: 100%;
-    height: 90%;
+    height: 100%;
 }
 
 .bolder-table {
@@ -264,9 +264,9 @@ input#checkmenu {
         position: absolute;
         right: -100%;
         animation: appear;
-        animation-duration: 1.5s;
+        animation-duration: 2s;
         animation-fill-mode: forwards;
-        transition: rigth 3s;
+        transition: rigth 4s;
         transition-timing-function: ease-in;
 
     }
